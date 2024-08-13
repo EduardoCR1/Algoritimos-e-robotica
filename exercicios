@@ -2,42 +2,36 @@ exercicios
 
 Exercicio 1:
 
-#include<iostream>
+#include <stdio.h>
 
-using namespace std;
-
-//inciar codigo principal
-int main()
-{
+int main() {
     int visitantes;
 
-    cout << "Digite o numero de visitantes que acessaram o site hoje : ";
-    cin >> visitantes;
+    printf("Digite o número de visitantes que entraram hoje: ");
+    scanf("%d", &visitantes);
 
-    //saida
-    cout << "\nNumero de visitantes registrados hoje: " << visitantes;
+    printf("Número de visitantes registrado: %d\n", visitantes);
+    printf("Obrigado!\n");
+
+    return 0;
 }
 
 Exercicio 2:
 
-#include<iostream>
+#include <stdio.h>
 
-using namespace std;
-
-//iniciar codigo principal
-int main()
-{
+int main() {
     float receita, despesa, saldo;
 
-    cout << "\nDigite o valor da receita : ";
-    cin >> receita;
+    printf("Digite o valor da receita: ");
+    scanf("%f", &receita);
 
-    cout << "\nDigite o valor da despesa : ";
-    cin >> despesa;
+    printf("Digite o valor da despesa: ");
+    scanf("%f", &despesa);
 
-    //valor
     saldo = receita - despesa;
 
-    //saida
-    cout << "\nValor final do saldo : " << saldo;
+    printf("Saldo final: %.2f\n", saldo);
+
+    return 0;
 }
