@@ -90,4 +90,87 @@ int main()
 }
 
 c)
+#include<stdio.h>
+#include<locale.h>
 
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    char nome[50];
+    int id, d;
+
+    printf("\n\nInserir nome :");
+    scanf("%s", &nome);
+
+
+    printf("\n\nInserir idade :");
+    scanf("%d", &id);
+
+    d = id * 365;
+    printf("\n\nSua idade em dias : %d", d);
+
+    return 0;
+}
+
+d)
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int r, a;
+
+    printf("\n\nInsira o valor do raio :");
+    scanf("%d", &r);
+
+    a = 2 * 3.14 * pow(r,2);
+    printf("\n\nValor da área é : %d", a);
+
+    return 0;
+}
+
+e)
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+int main()
+{
+    float L, h, lt, p;
+
+    printf("\n\nValor da largura da parede :");
+    scanf("%f", &L);
+
+    printf("\n\n,Valor da altura da parede :");
+    scanf("%f", &h);
+
+    p = L * h;
+
+    lt = (p * 300) / 2000;
+    printf("\n\nValor de latas de tinta : %f", lt);
+
+}
+
+f)
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    float F, C;
+
+    printf("\n\nValor da temperatura em graus Farenheit : ");
+    scanf("%f", &F);
+
+    C = (( 5.0 / 9.0 ) * ( F - 32 ));
+    printf("\n\nValor da temperatura em graus Centígrados : %f", C);
+}
+
+g)
