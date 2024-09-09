@@ -50,4 +50,44 @@ int main()
 }
 
 2a)
+#include<stdio.h>
+
+int main()
+{
+    int N1, N2, N3;
+
+    printf("\n\nInserir numeros:", N1);
+    scanf("%d", &N1);
+
+    printf("\n\nInserir numeros:", N2);
+    scanf("%d", &N2);
+
+    printf("\n\nInserir numeros:", N3);
+    scanf("%d", &N3);
+
+    printf("\n\nOrdem inversa = %d, %d, %d", N3, N2, N1);
+
+}
+
+b)
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    char nome[50];
+
+    printf("\n\nOlá eu sou o N1, como é seu nome ?");
+
+    printf("\n\nInserir nome :");
+    scanf("%s", &nome);
+
+    printf("\n\nBem vindo ao clube: %s", nome);
+
+    return 0;
+}
+
+c)
 
